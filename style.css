@@ -14,6 +14,14 @@ body {
   text-align: center;
 }
 
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
 .btn {
   border: none;
   background-color: #fff;
@@ -41,11 +49,23 @@ body {
 }
 
 .screen.up {
-  margin-top: 200vh;
+  margin-top: -100vh;
+}
+
+.insects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.insects-list li {
+  margin: 10px;
 }
 
 .choose-insect-btn img {
   object-fit: contain;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
 }
