@@ -14,6 +14,23 @@ body {
   text-align: center;
 }
 
+.btn {
+  border: none;
+  background-color: #fff;
+  color: #575dff;
+  padding: 10px 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:focus {
+  outline: none;
+}
+
 .screen {
   display: flex;
   flex-direction: column;
@@ -23,8 +40,12 @@ body {
   width: 100vw;
 }
 
+.screen.up {
+  margin-top: 200vh;
+}
+
 .choose-insect-btn img {
   object-fit: contain;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
