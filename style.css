@@ -77,6 +77,9 @@ h1 {
   background-color: #fff;
   color: #575dff;
 }
+.choose-insect-btn:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .choose-insect-btn img {
   object-fit: contain;
