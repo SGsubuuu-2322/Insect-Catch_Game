@@ -123,3 +123,26 @@ h1 {
   opacity: 1;
   transform: translate(-50%, 150%);
 }
+
+.insect {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.4s ease-in-out;
+  top: 200px;
+  left: 300px;
+}
+
+.insect.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+  height: 100px;
+  width: 100px;
+}
