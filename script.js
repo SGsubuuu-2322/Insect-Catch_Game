@@ -26,7 +26,7 @@ function increaseTime() {
   s = s < 10 ? `0${s}` : s;
 
   timeEl.innerHTML = `
-  Time: ${m}:${s}
+  Time: ${s}:${m}
   `;
   seconds++;
 }
@@ -39,7 +39,7 @@ choose_insect_btns.forEach((btn) => {
     selected_insect = { src, alt };
     screens[1].classList.add("up");
     setTimeout(createInsect, 1000);
-    // satrtGame();
+    startGame();
   });
 });
 

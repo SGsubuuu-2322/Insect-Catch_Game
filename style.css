@@ -99,10 +99,10 @@ h1 {
 }
 
 .score {
-  left: 20px;
+  right: 20px;
 }
 .time {
-  right: 20px;
+  left: 20px;
 }
 
 .message {
