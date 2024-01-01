@@ -14,6 +14,23 @@ start_btn.addEventListener("click", () => {
   screens[0].classList.add("up");
 });
 
+function startGame() {
+  setInterval(increaseTime, 1000);
+}
+
+function increaseTime() {
+  let s = Math.floor(seconds / 60);
+  let m = seconds % 60;
+
+  m = m < 10 ? `0${m}` : m;
+  s = s < 10 ? `0${s}` : s;
+
+  timeEl.innerHTML = `
+  Time: ${m}:${s}
+  `;
+  seconds++;
+}
+
 choose_insect_btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const img = btn.querySelector("img");
