@@ -38,12 +38,12 @@ choose_insect_btns.forEach((btn) => {
     const alt = img.getAttribute("alt");
     selected_insect = { src, alt };
     screens[1].classList.add("up");
-    setTimeout(createInsect, 1000);
+    setTimeout(createInsects, 1000);
     startGame();
   });
 });
 
-function createInsect() {
+function createInsects() {
   const insect = document.createElement("div");
   insect.classList.add("insect");
   let { x, y } = getRandomLocation();
@@ -70,6 +70,12 @@ function catchInsect() {
   increaseScore();
   this.classList.add("caught");
   setTimeout(() => this.remove(), 2000);
+  addInsects();
+}
+
+function addInsects() {
+  setTimeout(createInsects, 1000);
+  setTimeout(createInsects, 1500);
 }
 
 function increaseScore() {
